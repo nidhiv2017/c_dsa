@@ -1,0 +1,5 @@
+What is an array?
+How do you declare and initialize an array in C/C++?
+What are the advantages and disadvantages of using arrays?
+How can you access elements within an array?
+How can you iterate over all elements in an array?
