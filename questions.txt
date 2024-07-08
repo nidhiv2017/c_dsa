@@ -1,0 +1,5 @@
+What is a struct? (A user-defined composite data type to group related variables)
+How do you declare and define a struct in C/C++?
+How do you access members (variables) of a struct?
+Can you create arrays of structs?
+What are the benefits of using structs for data organization?
