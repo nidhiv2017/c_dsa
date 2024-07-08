@@ -1,0 +1,5 @@
+What is a linked list? (A collection of nodes where each node contains data and a reference to the next node)
+Explain the difference between a singly linked list and a doubly linked list.
+How do you insert a new node at the beginning of a linked list?
+How do you delete a node from a linked list?
+What are the advantages and disadvantages of using linked lists compared to arrays?
