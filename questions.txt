@@ -1,0 +1,5 @@
+What is a graph? (Network of nodes (vertices) connected by edges)
+Explain the difference between a directed graph and an undirected graph.
+How can you represent a graph in C/C++ using an adjacency list or adjacency matrix?
+What are some algorithms commonly used on graphs (BFS, DFS)?
+What are some real-world applications of graphs (Social networks, navigation maps)?
