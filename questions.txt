@@ -1,0 +1,5 @@
+What is a tree? (Hierarchical data structure with a root node, child nodes, and parent-child relationships)
+What are the different types of trees (binary tree, n-ary tree)?
+Explain the concept of tree traversal (pre-order, in-order, post-order).
+What are some real-world applications of trees? (File systems, decision trees)
+How does a tree differ from a linked list in terms of organization?
