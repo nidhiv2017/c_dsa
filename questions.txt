@@ -1,0 +1,5 @@
+What is dynamic memory allocation (DMA)? (Allocating memory at runtime)
+What are the functions typically used for DMA in C/C++ (malloc, calloc, realloc, free)?
+Why is DMA necessary when arrays might seem sufficient? (Arrays have fixed size at compile time)
+How can improper DMA usage lead to memory leaks?
+What are some best practices for using DMA effectively?
