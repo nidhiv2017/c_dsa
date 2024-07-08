@@ -1,0 +1,5 @@
+What is a queue? (FIFO - First In, First Out data structure)
+What are the basic operations performed on a queue (enqueue and dequeue)?
+How can you implement a queue using an array?
+What are some real-world applications of queues? (Task scheduling, printer spooling)
+How does a queue differ from a stack in terms of access order?
