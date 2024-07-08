@@ -1,0 +1,5 @@
+What is a stack? (LIFO - Last In, First Out data structure)
+What are the basic operations performed on a stack (push and pop)?
+How can you implement a stack using an array?
+What are some real-world applications of stacks? (Function call stack, expression evaluation)
+What are the limitations of using a stack implemented with an array?
