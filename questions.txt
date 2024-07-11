@@ -1,5 +1,146 @@
-What is a stack? (LIFO - Last In, First Out data structure)
-What are the basic operations performed on a stack (push and pop)?
-How can you implement a stack using an array?
-What are some real-world applications of stacks? (Function call stack, expression evaluation)
-What are the limitations of using a stack implemented with an array?
+QUESTION 1: What is a stack? (LIFO - Last In, First Out data structure)
+
+ANSWER: A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle. 
+Imagine a stack of plates: the last plate you put on the stack is the first one you can take off. 
+This is how elements are added and removed from a stack in computer science.
+
+Here are some key points about stacks:
+
+LIFO order: Elements are added and removed from the same end, called the "top" of the stack.
+Push and Pop operations: Adding an element is called "pushing" it onto the stack. Removing the top 
+element is called "popping" it from the stack.
+Limited access: Unlike some other data structures, you can't access elements arbitrarily in a stack. 
+You can only add or remove elements from the top.
+Real-life examples of stacks include:
+
+A stack of plates
+A pile of books
+A back button history in a web browser
+
+
+QUESTION 2: What are the basic operations performed on a stack (push and pop)?
+
+ANSWER:  the two fundamental operations on a stack: push and pop.
+
+Push: Adding an element to the top of the stack. This is like placing another plate on top of the 
+stack in our analogy.
+
+Pop: Removing the element from the top of the stack and returning its value. It's like taking the 
+top plate off the stack.
+
+These operations follow the LIFO (Last-In-First-Out) principle. The element you pushed last is the 
+one you will pop first.
+
+Here are some additional points to consider:
+
+Empty and Full conditions: Some implementations of stacks might also have operations to check if the 
+stack is empty (no elements) or full (reached its maximum capacity).
+
+Top element access: In some variations, there might be a peek operation that allows you to retrieve 
+the value of the top element without removing it from the stack.
+
+QUESTION 3: How can you implement a stack using an array?
+
+ANSWER: You can implement a stack using an array by leveraging the concept of a top pointer and 
+the LIFO principle.
+
+Array and Top pointer:
+
+Declare an array to hold the stack elements. This array will have a fixed size, so consider your 
+application's needs when defining the size.
+Initialize a separate variable, often called top, to -1. This variable acts as a pointer, keeping 
+track of the index of the top element in the array. Initially, the stack is empty, so top points to 
+nowhere (hence -1).
+
+Push operation:
+
+To push an element onto the stack:
+Check if the stack is full (i.e., top is equal to the array size minus 1). If it's full, handle the 
+overflow condition (e.g., print an error message).
+If there's space, increment top by 1. This effectively moves the top pointer to the next available 
+slot in the array.
+Add the new element to the array at the index pointed to by top.
+
+Pop operation:
+
+To pop an element from the stack:
+Check if the stack is empty (i.e., top is -1). If it's empty, handle the underflow condition 
+(e.g., print an error message).
+If there are elements, get the value of the element at the index pointed to by top.
+Decrement top by 1. This effectively moves the top pointer down the array, reflecting the removal 
+of the top element.
+Return the value retrieved from the stack.
+
+QUESTION 4: What are some real-world applications of stacks? (Function call stack, expression 
+evaluation)
+
+ANSWER: Two excellent real-world applications of stacks: function call stacks and expression 
+evaluation. 
+
+1. Function Call Stack:
+
+When a program calls a function, a new activation record is pushed onto the stack. This record 
+stores information about the function call, including:
+
+Local variables and parameters of the function
+The return address - where the program should resume execution after the function finishes
+When the function finishes executing, its activation record is popped from the stack. This ensures 
+the program returns to the correct point in the code that called the function.
+
+2. Expression Evaluation:
+
+Stacks are instrumental in evaluating expressions written in postfix notation (e.g., 2 3 +).
+
+The expression is processed element by element:
+
+Numbers are pushed onto the stack.
+When an operator is encountered, the operands (numbers) are popped from the stack, the operation 
+is performed, and the result is pushed back onto the stack.
+
+By the end of the evaluation, the final result remains on the top of the stack. Stacks also play 
+a role in converting expressions from infix notation (e.g., (2 + 3)) to postfix notation for 
+efficient evaluation.
+
+Additional Real-World Applications:
+
+Undo/Redo Functionality: Many software programs, like word processors or image editing tools, 
+utilize stacks to implement undo/redo functions. When an action is performed, the program pushes 
+the state before the action onto the stack. Undoing pops the previous state from the stack and 
+restores it.
+
+Backtracking Algorithms: These algorithms explore different paths to solve a problem. Stacks are 
+used to keep track of the explored paths and allow backtracking if a dead end is reached.
+
+Parsing: Stacks are used in parsers to verify the syntax of code, expressions, or data. Characters 
+or tokens are pushed onto the stack, and the parser checks if the order and structure follow the 
+defined grammar rules.
+
+Browser History: Web browsers use stacks to maintain your browsing history. When you navigate to 
+a new page, the current page is pushed onto the "back" stack. This allows you to use the back 
+button to revisit previous pages by popping them from the stack.
+
+QUESTION 5: What are the limitations of using a stack implemented with an array?
+
+ANSWER: While implementing a stack using an array offers simplicity and efficiency for push 
+and pop operations, it does come with some limitations:
+
+Fixed Size: The biggest drawback is the fixed size of the array. You need to define the size 
+upfront, and the stack cannot grow or shrink dynamically based on the number of elements. This 
+can be problematic if you don't know the maximum number of elements the stack might need to hold 
+beforehand.
+
+Overflow and Underflow: If you try to push an element onto a full stack, you'll encounter an 
+overflow condition. Similarly, popping from an empty stack leads to underflow. These conditions 
+need to be handled appropriately in your code to prevent errors.
+
+Memory Wastage:  Even if you define the size generously to accommodate potential needs, there 
+might be situations where the stack doesn't utilize the entire allocated space. This can lead to 
+memory wastage, especially if you're dealing with large arrays.
+
+Resizing (Potential): In some cases, if the stack operations frequently cause overflows, you might 
+want to consider resizing the array dynamically. However, this can be a complex operation and can 
+impact performance due to memory reallocation.
+
+Limited Access: Stacks implemented with arrays only allow insertion and deletion from the top. 
+You cannot access elements arbitrarily in the middle of the stack, which might be a limitation 
+for certain applications.
