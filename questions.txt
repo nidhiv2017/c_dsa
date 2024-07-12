@@ -1,16 +1,18 @@
-What is a struct? (A user-defined composite data type to group related variables)
+QUESTION 1: What is a struct? (A user-defined composite data type to group related variables)
 
- a struct (short for structure) is a user-defined composite data type that allows you to group 
- related variables under a single name. It's like creating a custom data blueprint that holds 
- various pieces of information together.
+ANSWERS: Struct (short for structure) is a user-defined composite data type that allows you to group 
+related variables under a single name. It's like creating a custom data blueprint that holds 
+various pieces of information together.
 
- Here are some key characteristics of structs:
+Here are some key characteristics of structs:
 
 Grouping variables: A struct combines variables of potentially different data types 
 (like integers, strings, floats) into a single unit. This makes it easier to manage and work 
 with related data sets.
+
 User-defined name: You assign a name to the struct, which acts as a template for creating 
 instances (variables) of that struct type.
+
 Improved code organization: By grouping related data, structs promote better code organization 
 and readability. You can easily identify and access relevant data members within the struct.
 Efficient data handling: Structs are efficient for handling data that naturally belongs together,
@@ -37,9 +39,9 @@ price: Float to store the book's price.
 
 ***********************************************************************************************
 
-How do you declare and define a struct in C/C++?
+QUESTION 2: How do you declare and define a struct in C/C++?
 
-C:
+ANSWERS: C:
 
 Struct declaration:
 Use the struct keyword followed by the chosen struct name and curly braces {}.
@@ -63,7 +65,7 @@ Structs provide a powerful mechanism for organizing and managing related data in
 
 ****************************************************************************************************
 
-How do you access members (variables) of a struct?
+QUESTION 3: How do you access members (variables) of a struct?
 
 In C and C++, you access members (variables) of a struct using the dot operator (.) after the
 struct variable name. Here's how it works:
@@ -116,10 +118,10 @@ in your C and C++ programs.
 
 ****************************************************************************************************
 
-Can you create arrays of structs?
+QUESTION 4: Can you create arrays of structs?
 
 
-Declare the struct:
+ANSWERS: Declare the struct:
 
 Define the struct type as usual, specifying the member variables and their data types.
 Array declaration:
@@ -151,9 +153,9 @@ structures (e.g., linked lists) if you need a more flexible collection size.
 
 ***************************************************************************************************
 
-What are the benefits of using structs for data organization?
+QUESTION 5: What are the benefits of using structs for data organization?
 
-Structs offer several advantages for data organization in C and C++:
+ANSWERS: Structs offer several advantages for data organization in C and C++:
 
 1. Improved code readability and maintainability:
 
